@@ -11,16 +11,9 @@ Let's get started
 ## Setup
 
 ### Glitch - Beginner
-Let's first start by grabbing a template. Go to here and click Remix your Own.
-
-Working in Glitch with p5.js is a little difficult because it doesn't recognize some of the Processing commands so it may show an error even though your code has no errors.
+Let's first start by grabbing a template. Go to [here](https://glitch.com/~polarized-land) and click Remix your Own.
 
 You'll be editing `city-scroller.js`
-
-### Github
-You can also clone / download this repository and then open it in your IDE of choice (e.g. Visual Studio Code)
-
-You will be editing `city-scroller.js`
 
 You'll notice two functions `setup` and `draw`. These are functions that will be automatically called when you run your program.
 
@@ -135,7 +128,7 @@ We want to be able to see if our `addBuilding` method works so let's create a `d
 
 Now let's see if we can can add a couple of buildings to our skyline and put them on screen. Let's go back to our `setup` and `draw` functions and test our Skyline class.
 
-![Test Skyline](images/testSkyline_initial_display.png)
+![Test Skyline](images/testSkyline_initial.png)
 
 You should see something like this in your show window.
 
@@ -188,6 +181,18 @@ Check and make sure that your scene still works.
 Now create a couple of different Skylines with different speeds.
 
 **Challenge** Create an attribute for the Skyline class called `buildingColor` that will represent the color of the buildings in that particular Skyline. See if you can create Skylines of different colors.
+
+## Part III - Keypressed
+
+We want to be able to control when our buildings move. We are going to use a built in function to p5.js called `keyIsDown` that will check to see when we press a key.
+
+Adjust your draw function like so:
+
+![Key is Down](images/keyIsDown.png)
+
+Don't forget to update your global variables up so that glitch doesn't throw an error
+
+You should now be able to control your buildings going off the screen
 
 
 
